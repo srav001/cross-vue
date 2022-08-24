@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
     appId: 'io.ionic.starter',
-    appName: 'vue-ionic-template',
+    appName: 'cross-web',
     webDir: 'dist',
     bundledWebRuntime: false
 };

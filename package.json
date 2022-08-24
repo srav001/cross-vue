@@ -1,5 +1,5 @@
 {
-    "name": "vue-ionic-template",
+    "name": "cross-web",
     "version": "1.1.0",
     "description": "A production ready starter template for projects with ionic-vue with linting, formatter etc pre-configured.",
     "main": "./src/main.ts",
@@ -7,6 +7,7 @@
         "dev": "vite",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
+        "tauri": "tauri",
         "test": "echo \"Error: no test specified\" && exit 1",
         "project-setup": "pnpm install && rm -rf .husky && npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --verbose --edit $1' ",
         "format": "npx prettier --write --config ./.prettierrc.js src",
@@ -14,14 +15,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/srav001/vue-ionic-template.git"
+        "url": "git+https://github.com/srav001/cross-web.git"
     },
     "author": "Sravan Suresh",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/srav001/vue-ionic-template/issues"
+        "url": "https://github.com/srav001/cross-web/issues"
     },
-    "homepage": "https://github.com/srav001/vue-ionic-template#readme",
+    "homepage": "https://github.com/srav001/cross-web#readme",
     "dependencies": {
         "@capacitor/app": "1.1.1",
         "@capacitor/core": "3.6.0",
@@ -30,6 +31,7 @@
         "@capacitor/status-bar": "1.0.8",
         "@ionic/vue": "^6.1.12",
         "@ionic/vue-router": "^6.1.12",
+        "@tauri-apps/api": "^1.0.2",
         "pinia": "^2.0.14",
         "vue": "^3.2.37",
         "vue-router": "^4.0.16"
@@ -42,6 +44,7 @@
         "@typescript-eslint/eslint-plugin": "^5.30.3",
         "@typescript-eslint/parser": "^5.30.3",
         "@unocss/transformer-directives": "^0.44.3",
+        "@tauri-apps/cli": "^1.0.5",
         "@vitejs/plugin-vue": "^2.3.3",
         "@vue/eslint-config-airbnb": "^6.0.0",
         "eslint": "^8.19.0",
@@ -52,7 +55,7 @@
         "husky": "^8.0.1",
         "prettier": "^2.7.1",
         "unocss": "^0.44.3",
-        "vite": "^2.9.13",
+        "vite": "^3.0.9",
         "vite-plugin-pages": "^0.25.0",
         "vue-tsc": "^0.38.2"
     }
