@@ -6,6 +6,13 @@ const config: CapacitorConfig = {
 	appName: 'cross-web',
 	webDir: 'dist',
 	bundledWebRuntime: false,
+	android: {
+		path: './src-capacitor/android'
+	},
+	ios: {
+		path: './src-capacitor/android'
+	}
+
 	// server: {
 	// 	url: 'http://192.168.1.34:5172',
 	// 	cleartext: true

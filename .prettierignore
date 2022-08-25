@@ -3,3 +3,5 @@
 **/.hg
 **/node_modules
 package.json
+src-tauri
+src-capacitor
