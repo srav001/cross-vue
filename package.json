@@ -1,17 +1,28 @@
 {
     "name": "cross-web",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "description": "A production ready starter template for projects with ionic-vue with linting, formatter etc pre-configured.",
     "main": "./src/main.ts",
     "scripts": {
-        "dev": "vite",
-        "build":  "node -e 'require(\"./scripts\").build()'",
-        "tauri-dev": "node -e 'require(\"./scripts\").tauriDev()'",
+        "dev": "node -e 'require(\"./scripts\").dev()'",
+				"dev-ios": "node -e 'require(\"./scripts\").devIos()'",
+				"dev-android": "node -e 'require(\"./scripts\").devAndroid()'",
+        "dev-tauri": "node -e 'require(\"./scripts\").devTauri()'",
+
+				"build":  "node -e 'require(\"./scripts\").build()'",
+				"build-ios":  "node -e 'require(\"./scripts\").buildIos()'",
+				"build-android":  "node -e 'require(\"./scripts\").buildAndroid()'",
+				"build-tauri":  "node -e 'require(\"./scripts\").buildTauri()'",
+
+				"preview": "node -e 'require(\"./scripts\").preview()'",
+				"preview-ios": "node -e 'require(\"./scripts\").previewIos()'",
+				"preview-android": "node -e 'require(\"./scripts\").previewAndroid()'",
        
-        "project-setup": "node -e 'require(\"./scripts\").projectSetup()'",
+				"lint": "node -e 'require(\"./scripts\").lint()'",
         "format": "node -e 'require(\"./scripts\").format()'",
-        "lint": "node -e 'require(\"./scripts\").lint()'",
-				 "test": "echo \"Error: no test specified\" && exit 1"
+
+				"project-setup": "node -e 'require(\"./scripts\").projectSetup()'",
+				"test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",

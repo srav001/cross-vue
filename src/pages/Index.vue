@@ -35,7 +35,7 @@ if (data.introductionText === welcomeText.value) console.log(data.introductionTe
 
 					<ion-card-content class="text-center">
 						<p>{{ welcomeText }}</p>
-						<ion-button class="pt-1" router-link="/about">Click Me</ion-button>
+						<ion-button class="pt-1" router-link="/about">Click Me to Test</ion-button>
 					</ion-card-content>
 				</ion-card>
 			</div>

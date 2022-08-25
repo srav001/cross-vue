@@ -10,6 +10,9 @@ import transformerDirective from '@unocss/transformer-directives';
 import path from 'path';
 
 export default defineConfig({
+	server: {
+		host: true
+	},
 	plugins: [
 		vue(),
 		Pages(),
