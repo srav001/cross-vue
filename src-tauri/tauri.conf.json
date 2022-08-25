@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "cross-web",
+    "productName": "Cross Web",
     "version": "0.0.0"
   },
   "tauri": {
@@ -55,10 +55,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 720,
         "resizable": true,
-        "title": "cross-web",
-        "width": 800
+        "title": "Cross Web",
+        "width": 1280
       }
     ]
   }

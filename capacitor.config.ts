@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
 	appId: 'io.ionic.starter',
-	appName: 'cross-web',
+	appName: 'Cross Web',
 	webDir: 'dist',
 	bundledWebRuntime: false,
 	android: {
