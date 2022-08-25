@@ -10,13 +10,13 @@ const config: CapacitorConfig = {
 		path: './src-capacitor/android'
 	},
 	ios: {
-		path: './src-capacitor/android'
-	}
+		path: './src-capacitor/ios'
+	},
 
-	// server: {
-	// 	url: 'http://192.168.1.34:5172',
-	// 	cleartext: true
-	// }
+	server: {
+		url: 'http://192.168.1.34:5174',
+		cleartext: true
+	}
 };
 
 export default config;
