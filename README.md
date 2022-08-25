@@ -1,6 +1,6 @@
 # An all-in-one starter pack
 
-A starter template for building bleeding edge web apps for all platforms. 
+A starter template for building bleeding edge web apps for all platforms. Has Capacitor and Tauri pre-configured and added to bundle for the mobile and app. Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses `WebView` to render. This will act as the start template for a newer CLI based start pack similar to `Quasar`. There will be an option to add `Supabase` as the DB if needed at that point.  
 
 - `It uses the latest tech in vue ecosystem. For example pinia for store and vite for building.` [Click here for more info](https://twitter.com/youyuxi/status/1464058813649088516?lang=en)
 
@@ -11,7 +11,7 @@ UnoCSS is awesome, since it's on-demand ( it offers low bundle size ) while prov
 ## Why use this template ?
 
 - You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue](https://twitter.com/youyuxi/status/1464058813649088516?lang=en) has to offer ( All of it is setup ).
-- If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with capacitor ( I feel it is better for mobile than other vue component libraries).
+- If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with Capacitor ( I feel it is better for mobile than other vue component libraries).
 - File structure based routing and UnoCSS for simpler css.
 - Capacitor is present for mobile and Tauri for desktops.
 - Eslint for linting and prettier for formatting files ( and yes both work combined without issues ).
