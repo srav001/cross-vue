@@ -1,6 +1,6 @@
 # An all-in-one starter pack
 
-A starter template for building bleeding edge web apps for all platforms. Has Capacitor and Tauri pre-configured and added to bundle for the mobile and app. Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses `WebView` to render. This will act as the start template for a newer CLI based start pack similar to `Quasar`. There will be an option to add `Supabase` as the DB if needed at that point.  
+A starter template for building bleeding edge web apps for all platforms. Has Capacitor and Tauri pre-configured and added to bundle for the mobile and app. Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses WebView to render. This will act as the start template for a newer CLI based start pack similar to `Quasar`. There will be an option to add `Supabase` as the DB if needed at that point.
 
 - `It uses the latest tech in vue ecosystem. For example pinia for store and vite for building.` [Click here for more info](https://twitter.com/youyuxi/status/1464058813649088516?lang=en)
 
@@ -27,10 +27,21 @@ Note:
 
 - ` Examples are included for the most common ones and rest is left for developer decision.`
 
+## Getting Started 🤩
+
+Note:
+
+> pnpm is used and recommended for this project. If any other package manager is used, please go through the scripts folder to modify as needed.
+
+
+Run the command given below in the root directory
+``` 
+pnpm project-setup 
+```
+
+##
+
 ## Custom Scripts:
 
-```
-pnpm project-setup: 'Runs pnpm install and setups up husky for commit linting'
-pnpm lint: 'Runs eslint in src directory and fixes all autofixeable errors'
-pnpm format: 'Runs src directory through prettier and formats all files'
-```
+All custom scripts with bried comments can be found in `scripts` directory. All of them have been added to package.json to be invoked.
+
