@@ -1,4 +1,4 @@
 /* If you feel like your html is becoming dirty with alot of classes, use @apply multiple classes to one and use that */
 .welcome-page {
-    @apply justify-center m-0 p-3;
+	@apply justify-center m-0 p-3;
 }

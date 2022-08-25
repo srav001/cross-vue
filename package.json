@@ -5,13 +5,13 @@
     "main": "./src/main.ts",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc --noEmit && vite build",
-        "preview": "vite preview",
-        "tauri": "tauri",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "project-setup": "pnpm install && rm -rf .husky && npx husky install && npx husky add .husky/commit-msg 'npx --no -- commitlint --verbose --edit $1' ",
-        "format": "npx prettier ./src ./scripts -w",
-        "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src scripts"
+        "build":  "node -e 'require(\"./scripts\").build()'",
+        "tauri-dev": "node -e 'require(\"./scripts\").tauriDev()'",
+       
+        "project-setup": "node -e 'require(\"./scripts\").projectSetup()'",
+        "format": "node -e 'require(\"./scripts\").format()'",
+        "lint": "node -e 'require(\"./scripts\").lint()'",
+				 "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
@@ -56,7 +56,6 @@
         "eslint-plugin-vuejs-accessibility": "^1.2.0",
         "husky": "^8.0.1",
         "prettier": "^2.7.1",
-        "shelljs": "^0.8.5",
         "taze": "^0.7.6",
         "unocss": "^0.45.12",
         "vite": "^3.0.9",

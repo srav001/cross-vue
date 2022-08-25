@@ -17,5 +17,5 @@ const app = createApp(App).use(createPinia()).use(IonicVue).use(router);
 app.component('BaseView', BaseView);
 
 router.isReady().then(() => {
-    app.mount('#app');
+	app.mount('#app');
 });
