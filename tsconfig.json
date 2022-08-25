@@ -14,11 +14,13 @@
         ],
         "baseUrl": "./src/",
         "paths": {
-            "assets/*": ["assets/*"],
-            "components/*": ["components/*"],
-            "core/*": ["core/*"],
-            "pages/*": ["pages/*"]
-        }
+					"assets/*": ["assets/*"],
+					"components/*": ["components/*"],
+					"core/*": ["core/*"],
+					"pages/*": ["pages/*"],
+					"stores/*": ["stores/*"],
+					"styles/*": ["styles/*"]
+				}
     },
     "include": [
         "src/**/*.ts",
