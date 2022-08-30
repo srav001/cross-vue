@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { execute } = require('./scriptUtils.js');
+const { execute, updateCapacitorConfig } = require('./scriptUtils.js');
 
 const buildCommand = 'npx vue-tsc --noEmit && npx vite build';
 
@@ -12,11 +12,17 @@ const build = () => execute(buildCommand);
 /**
  * It builds the app, then copies the iOS platform files to the `ios` directory
  */
-const buildIos = () => execute(`${buildCommand} && npx cap sync ios`);
+const buildIos = () => {
+	updateCapacitorConfig();
+	return execute(`${buildCommand} && npx cap sync ios`);
+};
 /**
  * `buildAndroid` builds the app, then copies the Android platform to the `android` directory
  */
-const buildAndroid = () => execute(`${buildCommand} && npx cap sync android`);
+const buildAndroid = () => {
+	updateCapacitorConfig();
+	return execute(`${buildCommand} && npx cap sync android`);
+};
 
 const buildTauri = () => execute('npx tauri build');
 

@@ -28,6 +28,7 @@ specifiers:
   eslint-plugin-vuejs-accessibility: ^1.2.0
   husky: ^8.0.1
   pinia: ^2.0.20
+  pnpm: ^7.9.5
   prettier: ^2.7.1
   taze: ^0.7.6
   unocss: ^0.45.12
@@ -69,6 +70,7 @@ devDependencies:
   eslint-plugin-vue: 9.4.0_eslint@8.22.0
   eslint-plugin-vuejs-accessibility: 1.2.0_eslint@8.22.0
   husky: 8.0.1
+  pnpm: 7.9.5
   prettier: 2.7.1
   taze: 0.7.6
   unocss: 0.45.12_vite@3.0.9
@@ -4252,6 +4254,12 @@ packages:
     dependencies:
       base64-js: 1.5.1
       xmlbuilder: 15.1.1
+    dev: true
+
+  /pnpm/7.9.5:
+    resolution: {integrity: sha512-+r7+PlBIsblqia8eUOUsBp/R+lHmGAm55jyQRt3DWMUI0srVR1aNJhQECfx24L53Ckz9g48mVxQXEniQMWQPmw==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: true
 
   /postcss-selector-parser/6.0.10:
