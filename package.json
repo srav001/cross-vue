@@ -1,6 +1,6 @@
 {
-	"name": "cross-web",
-	"version": "0.0.1",
+	"name": "vue-cross-web",
+	"version": "1.0.0",
 	"description": " An all-in-one starter pack.",
 	"main": "./src/main.ts",
 	"scripts": {
@@ -8,20 +8,16 @@
 		"dev-ios": "node -e 'require(\"./scripts\").devIos()'",
 		"dev-android": "node -e 'require(\"./scripts\").devAndroid()'",
 		"dev-tauri": "node -e 'require(\"./scripts\").devTauri()'",
-
 		"build": "node -e 'require(\"./scripts\").build()'",
 		"build-ios": "node -e 'require(\"./scripts\").buildIos()'",
 		"build-android": "node -e 'require(\"./scripts\").buildAndroid()'",
 		"build-tauri": "node -e 'require(\"./scripts\").buildTauri()'",
-
 		"preview": "node -e 'require(\"./scripts\").preview()'",
 		"preview-ios": "node -e 'require(\"./scripts\").previewIos()'",
 		"preview-android": "node -e 'require(\"./scripts\").previewAndroid()'",
-
 		"lint": "node -e 'require(\"./scripts\").lint()'",
 		"format": "node -e 'require(\"./scripts\").format()'",
 		"project-setup": "node -e 'require(\"./scripts\").projectSetup()'",
-
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {

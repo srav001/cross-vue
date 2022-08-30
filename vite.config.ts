@@ -9,9 +9,12 @@ import transformerDirective from '@unocss/transformer-directives';
 
 import path from 'path';
 
+import { serverPort } from './build/config.js';
+
 export default defineConfig({
 	server: {
-		host: true
+		host: true,
+		port: serverPort
 	},
 	plugins: [
 		vue(),

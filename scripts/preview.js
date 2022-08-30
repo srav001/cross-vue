@@ -1,16 +1,23 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { execute, buildCommand } = require('./scriptUtils.js');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { buildCommand } = require('./build.js');
+const { executeWithSync, updateCapacitorConfig } = require('./scriptUtils.js');
 
 // Preview commands
-const preview = () => execute('npx vite preview');
+const preview = () => executeWithSync('npx vite preview');
 /**
  * It builds the app, then runs it on an iOS device
  */
-const previewIos = () => execute(`${buildCommand} && npx cap run ios -l --external`);
+const previewIos = () => {
+	updateCapacitorConfig();
+	return executeWithSync(`${buildCommand} && npx cap run ios -l --external`);
+};
 /**
  * It builds the app, then runs it on an Android device
  */
-const previewAndroid = () => execute(`${buildCommand} && npx cap run android -l --external`);
+const previewAndroid = () => {
+	updateCapacitorConfig();
+	return executeWithSync(`${buildCommand} && npx cap run android -l --external`);
+};
 
 module.exports = {
 	preview,
