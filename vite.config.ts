@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vite';
+import legacy from '@vitejs/plugin-legacy';
 
 import vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
@@ -21,6 +22,9 @@ export default defineConfig({
 		Pages(),
 		Unocss({
 			transformers: [transformerDirective()]
+		}),
+		legacy({
+			targets: ['defaults', 'not IE 11']
 		})
 	],
 	resolve: {
