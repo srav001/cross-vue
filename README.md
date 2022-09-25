@@ -1,10 +1,11 @@
 # An all-in-one starter pack
 
-A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web apps for all platforms. Has [Capacitor](https://capacitorjs.com) 📱 and [Tauri](https://tauri.app) 💻 pre-configured and setup. 
+A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web apps for all platforms 🌟. Has [Capacitor](https://capacitorjs.com) 📱 and [Tauri](https://tauri.app) 💻 pre-configured and setup. 
 #
 Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses WebView to render.
 Note:
-> This will act as the starting template for a new CLI based starter pack similar to `Quasar`. There will be an option to add `Supabase` as the DB if needed at that point. [Cross Web](https://github.com/srav001/cross-web)
+> This will act as the starting template for a new CLI based starter pack similar to `Quasar`. There will be an option to add `Supabase` as the DB if needed at that point. Learn more about [Cross Web](https://github.com/srav001/cross-web) here - https://github.com/srav001/cross-web
+
 
 - `It uses the latest tech in vue ecosystem. For example pinia for store and vite for building.` [Click here for more info](https://twitter.com/youyuxi/status/1464058813649088516?lang=en)
 
