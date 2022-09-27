@@ -1,28 +1,23 @@
 {
 	"name": "cross-vue",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "An all-in-one starter pack for vue with mobile and desktop apps",
 	"main": "./src/main.ts",
 	"scripts": {
 		"dev": "node -e 'require(\"./scripts\").dev()'",
-
 		"dev-ios": "node -e 'require(\"./scripts\").devIos()'",
 		"dev-android": "node -e 'require(\"./scripts\").devAndroid()'",
 		"dev-tauri": "node -e 'require(\"./scripts\").devTauri()'",
-
 		"build": "node -e 'require(\"./scripts\").build()'",
 		"build-ios": "node -e 'require(\"./scripts\").buildIos()'",
 		"build-android": "node -e 'require(\"./scripts\").buildAndroid()'",
 		"build-tauri": "node -e 'require(\"./scripts\").buildTauri()'",
-
 		"preview": "node -e 'require(\"./scripts\").preview()'",
 		"preview-ios": "node -e 'require(\"./scripts\").previewIos()'",
 		"preview-android": "node -e 'require(\"./scripts\").previewAndroid()'",
-
 		"lint": "node -e 'require(\"./scripts\").lint()'",
 		"format": "node -e 'require(\"./scripts\").format()'",
 		"project-setup": "node -e 'require(\"./scripts\").projectSetup()'",
-		
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -70,6 +65,7 @@
 		"husky": "^8.0.1",
 		"prettier": "^2.7.1",
 		"taze": "^0.8.1",
+		"terser": "^5.15.0",
 		"unocss": "^0.45.22",
 		"vite": "^3.1.3",
 		"vite-plugin-pages": "^0.26.0",
