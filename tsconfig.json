@@ -1,4 +1,6 @@
 {
+	"extends": "@vue/tsconfig/tsconfig.web.json",
+	"include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
 	"compilerOptions": {
 		"target": "esnext",
 		"module": "esnext",
@@ -19,6 +21,10 @@
 			"styles/*": ["styles/*"]
 		}
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-	"exclude": ["node_modules"]
+
+	"references": [
+		{
+			"path": "./tsconfig.config.json"
+		}
+	]
 }

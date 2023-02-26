@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-// eslint-disable-next-line import/no-unresolved
+
 import routes from '~pages';
 
 const router = createRouter({
