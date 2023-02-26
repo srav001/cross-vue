@@ -8,5 +8,4 @@ import '../theme/variables.css';
 
 import '../assets/bootstrap-grid.min.css';
 
-// eslint-disable-next-line import/no-unresolved
 import 'uno.css';
