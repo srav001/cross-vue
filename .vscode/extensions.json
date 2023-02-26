@@ -1,13 +1,16 @@
 {
 	"recommendations": [
-		// Stack specific
+		// Vue
 		"vue.volar",
+		"vue.vscode-typescript-vue-plugin",
+		// Tauri
 		"tauri-apps.tauri-vscode",
 		"rust-lang.rust-analyzer",
-		// Quality specific
+		// Code quality specific
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		// QoL specific
+		"wayou.vscode-todo-highlight",
 		"usernamehw.errorlens",
 		"mintlify.document"
 	]

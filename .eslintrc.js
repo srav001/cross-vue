@@ -2,25 +2,18 @@ module.exports = {
 	env: {
 		node: true
 	},
+	plugins: ['sonarjs'],
 	extends: [
 		'eslint:recommended',
+		'plugin:sonarjs/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:vue/vue3-recommended',
-		'@vue/airbnb',
 		'prettier'
 	],
 	rules: {
 		'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'warn',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'off' : 'warn',
 		'vue/no-deprecated-slot-attribute': 'off',
-		'import/extensions': [
-			2,
-			{
-				js: 'always',
-				vue: 'always',
-				ts: 'never'
-			}
-		],
 		'vue/multi-word-component-names': [
 			'error',
 			{
