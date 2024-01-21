@@ -6,16 +6,16 @@ import { IonicVue } from '@ionic/vue';
 
 import App from './App.vue';
 
-import router from './router';
+import { routerCreated } from './pages/router';
 
 import './core/index';
 
 import BaseView from './core/BaseView.vue';
 
-const app = createApp(App).use(createPinia()).use(IonicVue).use(router);
+const app = createApp(App).use(createPinia()).use(IonicVue).use(routerCreated);
 
 app.component('BaseView', BaseView);
 
-router.isReady().then(() => {
+routerCreated.isReady().then(function () {
 	app.mount('#app');
 });

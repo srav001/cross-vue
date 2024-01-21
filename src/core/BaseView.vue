@@ -10,12 +10,12 @@ import { IonContent, IonButtons, IonBackButton, IonPage, IonHeader, IonTitle, Io
 					<ion-back-button></ion-back-button>
 				</ion-buttons>
 				<ion-title>
-					<slot name="default-view-title"></slot>
+					<slot name="title"></slot>
 				</ion-title>
 			</ion-toolbar>
 		</ion-header>
 		<ion-content>
-			<slot name="default-view-body"></slot>
+			<slot></slot>
 		</ion-content>
 	</ion-page>
 </template>

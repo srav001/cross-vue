@@ -31,7 +31,13 @@ export default defineConfig({
 			dts: basePathForGeneration.concat('typed-router.d.ts')
 		}),
 		autoImport({
-			imports: ['vue', VueRouterAutoImports],
+			imports: [
+				'vue',
+				VueRouterAutoImports,
+				{
+					'~/routes/router.ts': ['$router']
+				}
+			],
 			vueTemplate: true,
 			eslintrc: {
 				enabled: true,
