@@ -8,7 +8,7 @@ import App from './App.vue';
 
 import router from './router';
 
-import 'core';
+import './core/index';
 
 import BaseView from './core/BaseView.vue';
 
