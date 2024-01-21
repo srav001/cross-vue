@@ -16,7 +16,7 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 
 ### Planned for Later in V2:
 
--   Update UnoCSS to Tailwind v4.
+-   Update UnoCSS to Tailwind v4(To benefit from Oxide Complier and other updates).
 
 Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses WebView to render# Why use this template ?
 
