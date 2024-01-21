@@ -2,8 +2,6 @@
 
 A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web apps for all platforms 🌟. Has [Capacitor](https://capacitorjs.com) 📱 and [Tauri](https://tauri.app) 💻 pre-configured and setup.
 
-#
-
 ## New in V2 :
 
 -   Upgrade to Vue 3.4 and enable `props-destructure`.
@@ -48,6 +46,8 @@ pnpm project-setup
 ## Custom Scripts:
 
 All custom scripts with brief comments can be found in `scripts` directory. All of them have been added to package.json to be invoked.
+
+#
 
 Note:
 
