@@ -2,7 +2,7 @@
 	"extends": "@vue/tsconfig/tsconfig.dom.json",
 	"include": ["env.d.ts", "src/**/*", "src/**/*.vue", "./.generated/*.d.ts"],
 	"compilerOptions": {
-			/* Target */
+		/* Target */
 		"target": "ES2021",
 		"useDefineForClassFields": true,
 		"module": "ESNext",
@@ -24,7 +24,6 @@
 		"noFallthroughCasesInSwitch": true,
 		/* Emit */
 		"composite": true,
-		"noEmit": true,
 		"baseUrl": "./src/",
 		"paths": {
 			"~/*": ["./src/"],

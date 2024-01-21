@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import legacy from '@vitejs/plugin-legacy';
 import { VueRouterAutoImports } from 'unplugin-vue-router';
 import VueRouter from 'unplugin-vue-router/vite';
 import autoImport from 'unplugin-auto-import/vite';
@@ -13,10 +12,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 const basePathForGeneration = './.generated/';
 
-// @ts-expect-error Un-typed file
-// import { serverPort } from './build/config.cjs';
-//
-const serverPort = 3000;
+// @ts-expect-error this is a js file.
+import { serverPort } from './build/config.js';
 
 const serverConfig = {
 	host: true,
@@ -50,9 +47,6 @@ export default defineConfig({
 		}),
 		Unocss({
 			transformers: [transformerDirective()]
-		}),
-		legacy({
-			targets: ['defaults', 'not IE 11']
 		})
 	]
 });

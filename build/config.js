@@ -1,3 +1,3 @@
-module.exports = {
-	serverPort: 5161
-};
+const serverPort = 5161;
+
+export { serverPort };
