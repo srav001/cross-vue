@@ -10,7 +10,7 @@ import transformerDirective from '@unocss/transformer-directives';
 
 import path from 'path';
 
-import { serverPort } from './build/config.js';
+import { serverPort } from './build/config.cjs';
 
 export default defineConfig({
 	server: {
