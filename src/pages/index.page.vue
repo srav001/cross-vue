@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 
-import { IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardContent } from '@ionic/vue';
-
+import { IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent } from '@ionic/vue';
 import useStore from '../stores/main';
 
 const mainStore = useStore();
@@ -11,10 +10,7 @@ const { welcomeText } = storeToRefs(mainStore);
 </script>
 
 <template>
-	<base-view id="home-page">
-		<template #title>
-			<div class="text-center">Home Page</div>
-		</template>
+	<page>
 		<div class="row welcome-page">
 			<ion-card class="col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
 				<ion-card-header>
@@ -28,5 +24,5 @@ const { welcomeText } = storeToRefs(mainStore);
 				</ion-card-content>
 			</ion-card>
 		</div>
-	</base-view>
+	</page>
 </template>

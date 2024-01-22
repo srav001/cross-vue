@@ -11,10 +11,7 @@ const showModal = () => {
 };
 </script>
 <template>
-	<base-view>
-		<template #title>
-			<div class="ml-1">Yay!</div>
-		</template>
+	<page>
 		<h1 class="text-center mt-3">Routing Works !</h1>
 
 		<ion-modal :is-open="modalIsOpen" @did-dismiss="modalIsOpen = false">
@@ -24,5 +21,5 @@ const showModal = () => {
 		<div class="col-12 text-center mt-3">
 			<ion-button @click="showModal()">Open Modal</ion-button>
 		</div>
-	</base-view>
+	</page>
 </template>
