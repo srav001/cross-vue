@@ -29,10 +29,8 @@
 			"~/*": ["./src/"],
 			"assets/*": ["assets/*"],
 			"components/*": ["components/*"],
-			"core/*": ["core/*"],
 			"pages/*": ["pages/*"],
 			"stores/*": ["stores/*"],
-			"styles/*": ["styles/*"]
 		}
 	},
 
