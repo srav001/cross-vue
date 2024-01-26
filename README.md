@@ -26,6 +26,7 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 -   Eslint for linting and prettier for formatting files ( and yes both work combined without issues ).
 -   Husky is setup and is being used for commit linting.
 -   Vite is used for superior dev experience.
+-   Setup so that VS Code suggests all needed extensions for a good dev experience.
 -   Live servers with `dev-ios`, `dev-android` & `dev-tauri` for easier dev experience.
 
 ###
