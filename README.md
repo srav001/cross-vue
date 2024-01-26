@@ -16,6 +16,8 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 
 -   Update UnoCSS to Tailwind v4(To benefit from Oxide Complier and other updates).
 
+## Why use this template ?
+
 -   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue].
 -   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with Capacitor ( I feel it is better for mobile than other vue component libraries).
 -   File structure based routing and UnoCSS for atomic css.
