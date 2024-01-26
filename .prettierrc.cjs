@@ -5,5 +5,6 @@ module.exports = {
 	tabWidth: 4,
 	semi: true,
 	singleQuote: true,
-	bracketSameLine: true
+	bracketSameLine: true,
+	plugins: ['prettier-plugin-organize-imports']
 };

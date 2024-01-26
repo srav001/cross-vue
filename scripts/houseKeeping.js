@@ -20,3 +20,12 @@ export const format = () => execute('npx prettier ./src ./scripts -w');
  * ignoring files in the `.gitignore` file, and fixes any errors it finds
  */
 export const lint = () => execute('npx eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src scripts');
+
+/**
+ * Runs all commands needed before a build
+ * */
+export const preBuild = () => {
+	format();
+	lint();
+	execute('npx vue-tsc --noEmit');
+};
