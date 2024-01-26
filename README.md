@@ -11,6 +11,7 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 -   Use `vite-tsconfig-paths` for vite paths.
 -   Update all scripts and project to use ESM.
 -   Add auto-import with unplugin-auto-import - All vue exports, Vue router exports.
+-   Clean up code, remove un-needed dependencies and use better standards.
 
 ### Planned for Later in V2:
 
