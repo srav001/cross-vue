@@ -1,17 +1,16 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-console */
-const os = require('os');
-const { exec, execSync } = require('child_process');
+import * as os from 'node:os';
+import { exec, execSync } from 'node:child_process';
 
-const path = require('node:path');
-const { readFileSync, writeFileSync } = require('node:fs');
+import path from 'node:path';
+import { readFileSync, writeFileSync } from 'node:fs';
 
-const { serverPort } = require('../build/config.js');
+import { serverPort } from '../build/config.js';
 
 /**
  * It executes a command and logs the output to the console
  */
-const execute = command =>
+export const execute = (command) =>
 	exec(command, (err, stdout, stderr) => {
 		console.log(stdout);
 		if (err) console.error(err);
@@ -21,7 +20,7 @@ const execute = command =>
 /**
  * It executes a command with sync ( for live loading commands like dev ) and prints the output to the console
  */
-const executeWithSync = command => execSync(command, { stdio: 'inherit' });
+export const executeWithSync = (command) => execSync(command, { stdio: 'inherit' });
 
 /**
  * Get the IPv4 address of the first network interface that isn't internal
@@ -29,7 +28,7 @@ const executeWithSync = command => execSync(command, { stdio: 'inherit' });
 const getIP = () =>
 	Object.values(os.networkInterfaces())
 		.flat()
-		.filter(item => !item.internal && item.family === 'IPv4')
+		.filter((item) => !item.internal && item.family === 'IPv4')
 		.find(Boolean).address;
 
 /**
@@ -38,7 +37,7 @@ const getIP = () =>
  * @param [addLiveServer=false] - boolean - if true, the capacitor.config.json file will be updated
  * with the live server url.
  */
-const updateCapacitorConfig = (addLiveServer = false) => {
+export const updateCapacitorConfig = (addLiveServer = false) => {
 	const filePath = path.resolve('capacitor.config.json');
 	const fileToEdit = JSON.parse(readFileSync(filePath, { encoding: 'utf8' }));
 	if (fileToEdit.server) delete fileToEdit.server;
@@ -48,11 +47,4 @@ const updateCapacitorConfig = (addLiveServer = false) => {
 			clearText: true
 		};
 	writeFileSync(filePath, JSON.stringify(fileToEdit, null, 2));
-};
-
-module.exports = {
-	execute,
-	executeWithSync,
-
-	updateCapacitorConfig
 };
