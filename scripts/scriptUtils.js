@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
-import * as os from 'node:os';
 import { exec, execSync } from 'node:child_process';
+import * as os from 'node:os';
 
-import path from 'node:path';
 import { readFileSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
 
 import { serverPort } from '../build/config.js';
 
