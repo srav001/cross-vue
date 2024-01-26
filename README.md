@@ -6,21 +6,19 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 
 -   Upgrade to Vue 3.4 and enable `props-destructure`.
 -   Upgrade to Vite 5 and update dependencies.
--   Move to unlugin-vue-router for file based routing.
+-   Move to unlugin-vue-router for file based routing(From the author of Vue-router).
+-   File based routing that works with Ionic Router, which adds transition between pages and back button navigation on mobile.
 -   Use `vite-tsconfig-paths` for vite paths.
 -   Update all scripts and project to use ESM.
--   Removed bootstrap-grid. Can use Tailwind classes.
--   Add auto-import with unplugin-auto-import - All vue exports, Vue router exports and common Ionic components added.
+-   Add auto-import with unplugin-auto-import - All vue exports, Vue router exports.
 
 ### Planned for Later in V2:
 
 -   Update UnoCSS to Tailwind v4(To benefit from Oxide Complier and other updates).
 
-Tauri is used over electron for the advantages Tauri offers such as smaller build size, lower memory usage and also because in concept both Capacitor and Tauri works similary, i.e uses WebView to render# Why use this template ?
-
--   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue](https://twitter.com/youyuxi/status/1464058813649088516?lang=en) has to offer ( All of it is setup ).
+-   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue].
 -   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with Capacitor ( I feel it is better for mobile than other vue component libraries).
--   File structure based routing and UnoCSS for simpler css.
+-   File structure based routing and UnoCSS for atomic css.
 -   Capacitor is present for mobile and Tauri for desktops.
 -   Eslint for linting and prettier for formatting files ( and yes both work combined without issues ).
 -   Husky is setup and is being used for commit linting.
@@ -40,8 +38,6 @@ Run the command given below in the root directory
 ```
 pnpm project-setup
 ```
-
-##
 
 ## Custom Scripts:
 

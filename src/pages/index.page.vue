@@ -11,8 +11,8 @@ const { welcomeText } = storeToRefs(mainStore);
 
 <template>
 	<page>
-		<div class="row welcome-page">
-			<ion-card class="col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
+		<div class="welcome-page flex justify-center">
+			<ion-card class="w-full mx-2 lg:w-96">
 				<ion-card-header>
 					<ion-card-subtitle>First Page</ion-card-subtitle>
 					<ion-card-title>Welcome Home</ion-card-title>

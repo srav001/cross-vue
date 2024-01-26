@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { IonButton, IonButtons, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+defineEmits(['on-close']);
+</script>
+
 <template>
 	<ion-header>
 		<ion-toolbar class="px-1">

@@ -1,0 +1,5 @@
+@import '@ionic/vue/css/core.css';
+
+@import './theme/variables.css';
+
+@import './app.css';

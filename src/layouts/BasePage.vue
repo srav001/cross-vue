@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { IonContent, IonButtons, IonBackButton, IonPage, IonHeader, IonTitle, IonToolbar } from '@ionic/vue';
+// This BasePage component is required in all root level pages in order to have the header and back button work properly along with transitions from Ionic.
 </script>
 
 <template>
