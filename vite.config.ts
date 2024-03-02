@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite';
+import autoImport from 'unplugin-auto-import/vite';
 import { VueRouterAutoImports } from 'unplugin-vue-router';
 import VueRouter from 'unplugin-vue-router/vite';
-import autoImport from 'unplugin-auto-import/vite';
+import { defineConfig } from 'vite';
 
 import vue from '@vitejs/plugin-vue';
 
-import Unocss from 'unocss/vite';
 import transformerDirective from '@unocss/transformer-directives';
+import Unocss from 'unocss/vite';
 
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -35,7 +35,7 @@ export default defineConfig({
 				'vue',
 				VueRouterAutoImports,
 				{
-					'~/routes/router.ts': ['$router']
+					'~/pages/router.ts': ['$router']
 				}
 			],
 			vueTemplate: true,

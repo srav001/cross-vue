@@ -11,7 +11,6 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 -   Use `vite-tsconfig-paths` for vite paths.
 -   Update all scripts and project to use ESM.
 -   Add auto-import with unplugin-auto-import - All vue exports, Vue router exports.
--   Clean up code, remove un-needed dependencies and use better standards.
 
 ### Planned for Later in V2:
 
@@ -20,13 +19,13 @@ A Vue 💚 production ready 🤩 template for building bleeding edge 😎 web ap
 ## Why use this template ?
 
 -   You might don't want to go through the hassle of setting up linter, formatter, router, store etc and still want the [latest vue].
--   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with Capacitor ( I feel it is better for mobile than other vue component libraries).
+-   If you use the ionic components as your base for components, in future you can build your web app as an android or ios app with Capacitor.
 -   File structure based routing and UnoCSS for atomic css.
 -   Capacitor is present for mobile and Tauri for desktops.
 -   Eslint for linting and prettier for formatting files ( and yes both work combined without issues ).
 -   Husky is setup and is being used for commit linting.
 -   Vite is used for superior dev experience.
--   Setup so that VS Code suggests all needed extensions for a good dev experience.
+-   Setup so that, VS Code suggests all needed extensions for a good dev experience.
 -   Live servers with `dev-ios`, `dev-android` & `dev-tauri` for easier dev experience.
 
 ###
